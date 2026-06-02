@@ -1,0 +1,30 @@
+id: meteocat-weather
+name: Meteocat Weather Open Data Candidate
+domain: weather
+provider: Meteocat
+country_or_region: Catalonia, Spain
+source_type: api
+source_url: TODO
+documentation_url: TODO
+format:
+  - json
+refresh_frequency: TODO
+license:
+  name: TODO
+  url: TODO
+  notes: TODO
+ingestion:
+  mode: batch
+  authentication_required: unknown
+  rate_limits: unknown
+  historical_data_available: unknown
+  incremental_loading_supported: unknown
+lakehouse_layers:
+  landing_raw: true
+  bronze: true
+  silver: true
+  gold: true
+status: candidate
+mvp_candidate: true
+notes:
+  - "TODO: Verify source availability, API access, license and schema."

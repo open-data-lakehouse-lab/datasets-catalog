@@ -1,0 +1,30 @@
+id: datos-gob-es-weather
+name: datos.gob.es Weather Open Data Candidate
+domain: weather
+provider: datos.gob.es
+country_or_region: Spain
+source_type: api
+source_url: TODO
+documentation_url: TODO
+format:
+  - json
+refresh_frequency: TODO
+license:
+  name: TODO
+  url: TODO
+  notes: TODO
+ingestion:
+  mode: batch
+  authentication_required: unknown
+  rate_limits: unknown
+  historical_data_available: unknown
+  incremental_loading_supported: unknown
+lakehouse_layers:
+  landing_raw: true
+  bronze: true
+  silver: true
+  gold: true
+status: candidate
+mvp_candidate: true
+notes:
+  - "TODO: Verify source availability, API access, license and schema."

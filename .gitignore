@@ -31,3 +31,12 @@ secrets/
 *.pem
 *.p12
 *.jks
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Local tool state
+.cadence/

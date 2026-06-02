@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dataset Metadata Schema",
+  "description": "Schema for validating dataset.yml files in the catalog",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "domain",
+    "provider",
+    "country_or_region",
+    "source_type",
+    "format",
+    "status",
+    "mvp_candidate"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "domain": { "type": "string" },
+    "provider": { "type": "string" },
+    "country_or_region": { "type": "string" },
+    "source_type": { "type": "string" },
+    "source_url": { "type": "string" },
+    "documentation_url": { "type": "string" },
+    "format": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "refresh_frequency": { "type": "string" },
+    "license": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "ingestion": {
+      "type": "object",
+      "properties": {
+        "mode": { "type": "string" },
+        "authentication_required": { "type": "string" },
+        "rate_limits": { "type": "string" },
+        "historical_data_available": { "type": "string" },
+        "incremental_loading_supported": { "type": "string" }
+      }
+    },
+    "lakehouse_layers": {
+      "type": "object",
+      "properties": {
+        "landing_raw": { "type": "boolean" },
+        "bronze": { "type": "boolean" },
+        "silver": { "type": "boolean" },
+        "gold": { "type": "boolean" }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["candidate", "selected", "implemented", "deprecated", "rejected"]
+    },
+    "mvp_candidate": { "type": "boolean" },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
