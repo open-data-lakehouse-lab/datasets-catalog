@@ -8,7 +8,13 @@ The purpose of this catalog is to provide a single source of truth for the datas
 
 ## Current MVP Focus: Weather Open Data
 
-The first MVP of the project focuses on weather open data from Spanish and/or European public sources. We are currently in the evaluation phase, identifying candidate datasets that meet our selection criteria.
+The first MVP of the project focuses on weather open data from Spanish and/or European public sources.
+
+**Selected MVP Dataset:** `meteocat-weather`
+
+`meteocat-weather` has been selected for the first Weather Ingestion MVP. Other candidates remain as candidates for future evaluation or complementary data.
+
+*Note: Final source-specific license verification is still required before production-like reuse.*
 
 ## Candidate Dataset Sources
 

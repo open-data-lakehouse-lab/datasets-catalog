@@ -2,15 +2,16 @@
 
 ## Provider
 
-data.europa.eu
+data.europa.eu (The official portal for European data)
 
 ## Dataset purpose
 
-TODO
+Access to open data from European Union institutions, agencies and bodies, as well as from EU Member States and other European countries.
 
 ## Access method
 
-TODO
+- European data catalogue/discovery source.
+- Portal: https://data.europa.eu/
 
 ## Authentication
 
@@ -30,8 +31,8 @@ TODO
 
 ## Notes
 
-TODO
+- Useful as a European data catalogue/discovery source.
 
 ## Verification status
 
-TODO
+Verified official source information.

@@ -24,7 +24,16 @@ lakehouse_layers:
   bronze: true
   silver: true
   gold: true
-status: candidate
+status: selected
 mvp_candidate: true
+selection:
+  selected_for: Weather Ingestion MVP
+  decision_status: accepted
+  rationale:
+    - "Focused Catalonia weather API suitable for the first MVP."
+    - "REST API with JSON output."
+    - "Provides access to real-time and historical weather data."
+    - "Provides station and variable metadata through XEMA documentation."
+    - "Geographically bounded scope reduces MVP complexity."
 notes:
   - "TODO: Verify source availability, API access, license and schema."

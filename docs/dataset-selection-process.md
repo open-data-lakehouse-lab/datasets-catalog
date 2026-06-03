@@ -17,3 +17,13 @@ To ensure the quality, reliability, and openness of the datasets in our lakehous
 * **Ease of ingestion**: Technical feasibility of ingesting the data into the lakehouse.
 * **Reproducibility**: The data collection and ingestion process must be reproducible.
 * **No private data**: Datasets must not contain any personally identifiable information (PII) or private data.
+
+## Selected Datasets
+
+### Weather Ingestion MVP
+
+Selected: `meteocat-weather`
+
+The selection was based on its focused scope, REST API accessibility, JSON output, and detailed metadata through XEMA. It provides a realistic and manageable first end-to-end ingestion flow.
+
+*Note: Final source-specific license verification is still required before production-like reuse.*

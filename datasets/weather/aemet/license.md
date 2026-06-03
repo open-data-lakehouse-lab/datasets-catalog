@@ -2,15 +2,15 @@
 
 ## Upstream license
 
-TODO
+AEMET OpenData Terms of Use.
 
 ## License URL
 
-TODO
+https://www.aemet.es/es/datos_abiertos/AEMET_OpenData
 
 ## Usage notes
 
-TODO
+The official AEMET OpenData page states that use and reproduction of information are authorized when citing AEMET as the author.
 
 ## Project note
 

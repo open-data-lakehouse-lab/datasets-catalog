@@ -2,14 +2,23 @@
 
 This document tracks the candidate datasets being evaluated for the first MVP of the Open Data Lakehouse Lab, which focuses on weather data.
 
-## Candidate List
+## MVP Selection
 
-No final dataset has been selected yet. The following candidates are under evaluation:
+**Selected Dataset:** `meteocat-weather`
+
+**Rationale:**
+- Focused Catalonia weather API suitable for the first MVP.
+- REST API with JSON output.
+- Provides access to real-time and historical weather data.
+- Provides station and variable metadata through XEMA documentation.
+- Geographically bounded scope reduces MVP complexity.
+
+## Candidate List
 
 | Dataset ID | Provider | Region | Status | MVP Candidate |
 |---|---|---|---|---|
 | aemet-weather | AEMET | Spain | candidate | true |
-| meteocat-weather | Meteocat | Catalonia, Spain | candidate | true |
+| meteocat-weather | Meteocat | Catalonia, Spain | selected | true |
 | datos-gob-es-weather | datos.gob.es | Spain | candidate | true |
 | dades-obertes-generalitat-weather | Dades Obertes Generalitat de Catalunya | Catalonia, Spain | candidate | true |
 | data-europa-eu-weather | data.europa.eu | European Union | candidate | true |
@@ -18,10 +27,10 @@ No final dataset has been selected yet. The following candidates are under evalu
 
 | Feature | AEMET | Meteocat | datos.gob.es | Dades Obertes | data.europa.eu |
 |---|---|---|---|---|---|
-| API Access | TODO | TODO | TODO | TODO | TODO |
-| Format | TODO | TODO | TODO | TODO | TODO |
-| License | TODO | TODO | TODO | TODO | TODO |
-| Historical Data | TODO | TODO | TODO | TODO | TODO |
-| Refresh Frequency | TODO | TODO | TODO | TODO | TODO |
+| API Access | REST API | REST API | API | API | Discovery |
+| Format | JSON | JSON | TODO | TODO | TODO |
+| License | Authorized with citation | TODO | TODO | TODO | TODO |
+| Historical Data | Yes | Yes | TODO | TODO | TODO |
+| Refresh Frequency | TODO | High | TODO | TODO | TODO |
 
-*Note: All features are pending verification.*
+*Note: Final source-specific license verification is still required before production-like reuse.*

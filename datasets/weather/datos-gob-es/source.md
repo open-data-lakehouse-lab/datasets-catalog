@@ -2,15 +2,17 @@
 
 ## Provider
 
-datos.gob.es
+datos.gob.es (Spain's National Open Data Portal)
 
 ## Dataset purpose
 
-TODO
+Centralized access to open data from public bodies in Spain.
 
 ## Access method
 
-TODO
+- API for querying its semantic database and data catalogue.
+- datos.gob.es API: https://datos.gob.es/en/apidata
+- datos.gob.es accessible API page: https://datos.gob.es/en/accessible-apidata
 
 ## Authentication
 
@@ -30,8 +32,8 @@ TODO
 
 ## Notes
 
-TODO
+- Useful as a discovery/catalog source.
 
 ## Verification status
 
-TODO
+Verified official source information.
