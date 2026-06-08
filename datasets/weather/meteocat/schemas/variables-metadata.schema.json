@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Meteocat Variables Metadata Schema",
+  "description": "Flexible schema for Meteocat variables metadata. Allows an array of variables or a wrapped object.",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "variables": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/variable" }
+        },
+        "variables_auxiliars": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/variable" }
+        }
+      },
+      "additionalProperties": true
+    },
+    {
+      "type": "array",
+      "items": { "$ref": "#/$defs/variable" }
+    }
+  ],
+  "$defs": {
+    "variable": {
+      "type": "object",
+      "properties": {
+        "id": { "type": ["string", "number"] },
+        "code": { "type": ["string", "number"] },
+        "codi": { "type": ["string", "number"] },
+        "variable_code": { "type": ["string", "number"] },
+        "name": { "type": "string" },
+        "nom": { "type": "string" },
+        "unit": { "type": "string" },
+        "unitat": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  }
+}

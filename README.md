@@ -51,6 +51,16 @@ python3 -m pip install -r requirements-dev.txt
 python3 scripts/validate-datasets.py
 ```
 
+## Contract Validation
+
+The Meteocat Weather MVP now has draft schemas and internal contracts for minimal landing-level verification. These are not official upstream contracts and are designed to be permissive.
+
+To validate internal data contracts:
+
+```bash
+python3 scripts/validate-contracts.py
+```
+
 ## License
 
 Unless otherwise noted:

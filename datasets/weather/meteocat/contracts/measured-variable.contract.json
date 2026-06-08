@@ -1,0 +1,21 @@
+{
+  "contract_id": "meteocat-weather-measured-variable-landing-contract",
+  "dataset_id": "meteocat-weather",
+  "source": "meteocat",
+  "resource": "measured-variable",
+  "layer": "landing",
+  "status": "draft",
+  "validation_level": "minimal",
+  "schema_ref": "../schemas/measured-variable.schema.json",
+  "description": "Minimal landing contract for Meteocat measured variable.",
+  "allowed_evolution": {
+    "additional_fields": true,
+    "field_removal": "review_required",
+    "type_changes": "review_required"
+  },
+  "known_limitations": [
+    "Schema is intentionally permissive.",
+    "Real API payloads still require broader verification.",
+    "This is not an official upstream contract."
+  ]
+}

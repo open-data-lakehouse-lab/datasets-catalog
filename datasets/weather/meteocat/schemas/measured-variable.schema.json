@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Meteocat Measured Variable Schema",
+  "description": "Flexible schema for Meteocat measured variable (measurements). Allows an array of measurements or a wrapped object.",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/measurement" }
+        },
+        "dades": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/measurement" }
+        },
+        "observations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/measurement" }
+        },
+        "observacions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/measurement" }
+        }
+      },
+      "additionalProperties": true
+    },
+    {
+      "type": "array",
+      "items": { "$ref": "#/$defs/measurement" }
+    }
+  ],
+  "$defs": {
+    "measurement": {
+      "type": "object",
+      "properties": {
+        "id": { "type": ["string", "number"] },
+        "station_code": { "type": ["string", "number"] },
+        "codiEstacio": { "type": ["string", "number"] },
+        "variable_code": { "type": ["string", "number"] },
+        "codiVariable": { "type": ["string", "number"] },
+        "timestamp": { "type": "string" },
+        "data": { "type": "string" },
+        "value": { "type": "number" },
+        "valor": { "type": "number" }
+      },
+      "additionalProperties": true
+    }
+  }
+}

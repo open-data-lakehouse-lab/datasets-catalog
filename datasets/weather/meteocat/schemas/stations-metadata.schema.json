@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Meteocat Stations Metadata Schema",
+  "description": "Flexible schema for Meteocat stations metadata. Allows an array of stations or a wrapped object.",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "stations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/station" }
+        },
+        "estacions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/station" }
+        }
+      },
+      "additionalProperties": true
+    },
+    {
+      "type": "array",
+      "items": { "$ref": "#/$defs/station" }
+    }
+  ],
+  "$defs": {
+    "station": {
+      "type": "object",
+      "properties": {
+        "id": { "type": ["string", "number"] },
+        "code": { "type": ["string", "number"] },
+        "codi": { "type": ["string", "number"] },
+        "station_code": { "type": ["string", "number"] },
+        "name": { "type": "string" },
+        "nom": { "type": "string" },
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" },
+        "latitud": { "type": "number" },
+        "longitud": { "type": "number" }
+      },
+      "additionalProperties": true
+    }
+  }
+}

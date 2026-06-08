@@ -24,6 +24,6 @@ To ensure the quality, reliability, and openness of the datasets in our lakehous
 
 Selected: `meteocat-weather`
 
-The selection was based on its focused scope, REST API accessibility, JSON output, and detailed metadata through XEMA. It provides a realistic and manageable first end-to-end ingestion flow.
+The selection was based on its focused scope, REST API accessibility, JSON output, and detailed metadata through XEMA. It provides a realistic and manageable first end-to-end ingestion flow. Landing-level contracts and schemas are already available for this source.
 
 *Note: Final source-specific license verification is still required before production-like reuse.*

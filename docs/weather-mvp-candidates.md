@@ -12,6 +12,7 @@ This document tracks the candidate datasets being evaluated for the first MVP of
 - Provides access to real-time and historical weather data.
 - Provides station and variable metadata through XEMA documentation.
 - Geographically bounded scope reduces MVP complexity.
+- Initial schemas and landing data contracts have been defined.
 
 ## Candidate List
 
